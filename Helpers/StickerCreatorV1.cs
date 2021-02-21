@@ -35,15 +35,14 @@ namespace Helpers
         /// <param name="SizeSticker">Size of the sticker, must feed in</param>
         /// <param name="matOverride">Overrides the sprite renderer material in PRF_Sticker_Location if not null</param>
         /// <returns></returns>
+
         static StickerAsset CreateStickerAsset
             (
             string Name, string Desc, string IconPath, int ObjectiveType, ObjectiveEntry Objective, CurrencyAsset CurrencyType, float AmountForSticker,
             SalvageableChangedEvent.SalvageableState TypeSalavage, bool OneShipIsPlenty, bool AllItems, float MoneyOneShip, List<ModuleConstructionAsset> Modules,
             StickerSizeAsset SizeSticker, Material matOverride
             )
-
         {
-
             StickerAsset sticker = new StickerAsset();
 
             //Accesses private fields and edits them to the correct value
