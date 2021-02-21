@@ -2,12 +2,12 @@
     <img src="https://avatars.githubusercontent.com/u/16382828?s=60&v=4">
 </p>
 
-# LYNX Tools
+# LYNX API
 [![LYNX Modding Discord](https://user-images.githubusercontent.com/7288322/34429117-c74dbd12-ecb8-11e7-896d-46369cd0de5b.png)](https://discord.gg/SWmJ5eGJxN)
 
 ---
 
-LYNXtools is an unofficial modding framework for the game: Hardspace Shipbreaker. 
+LYNXAPI is an unofficial modding framework for the game: Hardspace Shipbreaker. 
 
 ## Features
 - Provides a uniform initialisation for assetbundles alongside secure loading ensuring conflicts between mods do not occur
