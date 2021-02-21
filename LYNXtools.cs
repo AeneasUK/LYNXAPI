@@ -47,19 +47,19 @@ using BBI.Unity.Game;
     /// <summary>
     /// Creates a valid stickerAsset specified by the modder for use
     /// </summary>
-    /// <param name="nameID"></param>
-    /// <param name="descID"></param>
-    /// <param name="IconPath"></param>
+    /// <param name="nameID">No idea, probably used for localisations with the data being held as an ID. This then matches up to localisations</param>
+    /// <param name="descID">No idea, probably used for localisations with the data being held as an ID. This then matches up to localisations</param>
+    /// <param name="IconPath">While this isn't an actual attribute, we will use this to load a sprite for this asset runtime</param>
     /// <param name="objectiveType">StickerObjectiveType:CollectObject, CollectCategoryOject,CollectCategoryMass,PAT,Currency</param>
     /// <param name="objective">Specify objective if the StickerObjectiveType is CollectObject, CollectCategoryObject, CollectCategoryMass, or PAT</param>
     /// <param name="currencyType">Specify currency type if the StickerObjectiveType is Currency</param>
     /// <param name="amountForSticker">Number of objects, total mass, or amount of currency required to obtain sticker.</param>
     /// <param name="salvageType">Specify salvage type if StickerOBjectiveType is CollectObject, CollectCategoryObject, or CollectCategoryMass"</param>
-    /// <param name="mustCompleteSingleShip"></param>
+    /// <param name="mustCompleteSingleShip">Self explanatory duh</param>
     /// <param name="collectAllInstances">For object collection ONLY. Enable if all instances of an object must be collected within a single ship.</param>
     /// <param name="currencyInOneShip">For currency stickers ONLY. Enable if an amount of currency must be collected within a single ship.</param>
     /// <param name="moduleRequiredList">All ModuleConstructionAssets specifying what ships this sticker can be obtained on</param>
-    /// <param name="size"></param>
+    /// <param name="size">Will need to feed in a StickerSizeAsset for this</param>
     /// <param name="materialOverride">Overrides the sprite renderer material in PRF_Sticker_Location if not null.</param>
     /// <returns></returns>
     public static StickerAsset StickerCreatorV1(string nameID, string descID, string IconPath, StickerAsset.StickerObjectiveType objectiveType,
