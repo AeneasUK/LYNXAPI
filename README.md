@@ -15,6 +15,11 @@ LYNXtools is a modding framework for the game: Hardspace Shipbreaker.
 - Provides a uniform initialisation for assetbundles alongside secure loading ensuring conflicts between mods do not occur
 - Allowing for the creation of stickerAssets
 
+## Used libraries
+
+- [BepInEx/HarmonyX](https://github.com/BepInEx/HarmonyX) - 2.3.1 ([bbc07d](https://github.com/BepInEx/HarmonyX/commit/bbc07dd1a6537cb1397c490f93a5619ad1d1fe3e))
+- [0x0ade/MonoMod](https://github.com/0x0ade/MonoMod) - v20.11.26.02 ([1775ec9](https://github.com/MonoMod/MonoMod/commit/1775ec98e76d3420b2365d6103b4f1b69761a197))
+
 ## Resources
 
 **[Community Discord server](https://discord.gg/shipbreakergame)**
