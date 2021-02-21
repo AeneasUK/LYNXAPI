@@ -68,7 +68,7 @@ using BBI.Unity.Game;
         StickerSizeAsset size, Material materialOverride)
     {
 
-        //Properties are private :( going to need to do it via bundle or custom write a patch which let's us set
+        //Properties are private :( going to need to do it via bundle or custom write a patch which lets us set
 
         StickerAsset sticker = new StickerAsset
         {
