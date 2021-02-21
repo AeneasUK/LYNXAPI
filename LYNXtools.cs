@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using BepInEx;
 using HarmonyLib;
 using System.Linq;
@@ -50,17 +50,17 @@ using BBI.Unity.Game;
     /// <param name="nameID"></param>
     /// <param name="descID"></param>
     /// <param name="IconPath"></param>
-    /// <param name="objectiveType"></param>
-    /// <param name="objective"></param>
-    /// <param name="currencyType"></param>
-    /// <param name="amountForSticker"></param>
-    /// <param name="salvageType"></param>
+    /// <param name="objectiveType">StickerObjectiveType:CollectObject, CollectCategoryOject,CollectCategoryMass,PAT,Currency</param>
+    /// <param name="objective">Specify objective if the StickerObjectiveType is CollectObject, CollectCategoryObject, CollectCategoryMass, or PAT</param>
+    /// <param name="currencyType">Specify currency type if the StickerObjectiveType is Currency</param>
+    /// <param name="amountForSticker">Number of objects, total mass, or amount of currency required to obtain sticker.</param>
+    /// <param name="salvageType">Specify salvage type if StickerOBjectiveType is CollectObject, CollectCategoryObject, or CollectCategoryMass"</param>
     /// <param name="mustCompleteSingleShip"></param>
-    /// <param name="collectAllInstances"></param>
-    /// <param name="currencyInOneShip"></param>
-    /// <param name="moduleRequiredList"></param>
+    /// <param name="collectAllInstances">For object collection ONLY. Enable if all instances of an object must be collected within a single ship.</param>
+    /// <param name="currencyInOneShip">For currency stickers ONLY. Enable if an amount of currency must be collected within a single ship.</param>
+    /// <param name="moduleRequiredList">All ModuleConstructionAssets specifying what ships this sticker can be obtained on</param>
     /// <param name="size"></param>
-    /// <param name="materialOverride"></param>
+    /// <param name="materialOverride">Overrides the sprite renderer material in PRF_Sticker_Location if not null.</param>
     /// <returns></returns>
     public static StickerAsset StickerCreatorV1(string nameID, string descID, string IconPath, StickerAsset.StickerObjectiveType objectiveType,
         ObjectiveEntry objective, CurrencyAsset currencyType, float amountForSticker, SalvageableChangedEvent.SalvageableState salvageType,
@@ -68,7 +68,7 @@ using BBI.Unity.Game;
         StickerSizeAsset size, Material materialOverride)
     {
 
-        //Properties are private :( going to need to do it via bundle or custom write a patch which lets us set
+        //Properties are private :( going to need to do it via bundle or custom write a patch which let's us set
 
         StickerAsset sticker = new StickerAsset
         {
