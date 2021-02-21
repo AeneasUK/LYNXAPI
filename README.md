@@ -9,7 +9,7 @@
 
 LYNXtools is a modding framework for the game: Hardspace Shipbreaker. 
 
-(Currently WIP by Aeneas)
+(Currently WIP)
 
 ## Features
 - Provides a uniform initialisation for assetbundles alongside secure loading ensuring conflicts between mods do not occur
