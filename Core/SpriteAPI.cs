@@ -19,6 +19,7 @@ namespace LYNXAPI.Core
     {
         public static Sprite CreateSprite(string Iconpath)
         {
+            //Loads the iconpath from the bundle specified in the initialiser
             Sprite mySprite = InitialiserAPI.bundle.LoadAsset<Sprite>(Iconpath);
             return mySprite;
         }
